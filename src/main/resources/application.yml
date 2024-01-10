@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /api
+spring:
+  datasource:
+    url: ${MYAPP_JDBC_URL}
+    username: postgres
+    password: password
+  flyway:
+    baseline-on-migrate: true
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+    port: 5672
+    username: guest
+    password: guest
